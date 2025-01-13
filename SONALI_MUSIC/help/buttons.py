@@ -63,7 +63,7 @@ class BUTTONS(object):
         ]
     PBUTTON = [
         [
-            InlineKeyboardButton("˹ ᴅᴇᴠ ˼", url="https://t.me/ll_THUNDER_ll")
+            InlineKeyboardButton("˹ ᴄσηᴛᴧᴄᴛ ˼", url="https://t.me/ll_UNLUCKY_PERSON_ll")
         ],
         [
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="MAIN_CP"),
@@ -73,8 +73,8 @@ class BUTTONS(object):
     
     ABUTTON = [
         [
-            InlineKeyboardButton("˹ sυᴘᴘσʀᴛ ˼", url="https://t.me/CRAZY_OP_02"),
-            InlineKeyboardButton("˹ υᴘᴅᴧᴛєs ˼", url="https://t.me/THUNDERDEVS"),
+            InlineKeyboardButton("˹ sυᴘᴘσʀᴛ ˼", url="https://t.me/PURVI_SUPPORT"),
+            InlineKeyboardButton("˹ υᴘᴅᴧᴛєs ˼", url="https://t.me/+gMy8Cp190ediNzZl"),
         ],
         [
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="MAIN_CP"),
@@ -84,11 +84,11 @@ class BUTTONS(object):
     
     SBUTTON = [
         [
-            InlineKeyboardButton("ϻυsɪᴄ", callback_data="settings_back_helper"),
-            InlineKeyboardButton("ϻᴧηᴧɢєϻєηᴛ", callback_data="ALLBOT_CP"),
+            InlineKeyboardButton("ʙσт нєʟᴘ", callback_data="settings_back_helper"),
+            InlineKeyboardButton("ᴧʟʟ ʙσᴛ's", callback_data="ALLBOT_CP"),
         ],
         [
-            InlineKeyboardButton("ᴛσσʟs", callback_data="PROMOTION_CP"),
+            InlineKeyboardButton("ᴘʀσϻσᴛɪση", callback_data="PROMOTION_CP"),
             InlineKeyboardButton("ᴧʙσυт", callback_data="MAIN_BACK HELP_ABOUT"),
         ],
         [
