@@ -14,6 +14,7 @@ from SONALI_MUSIC.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
+
 @app.on_message(filters.command("auth") & filters.group & ~BANNED_USERS)
 @AdminActual
 async def auth(client, message: Message, _):
