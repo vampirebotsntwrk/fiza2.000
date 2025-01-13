@@ -66,7 +66,7 @@ class BUTTONS(object):
             InlineKeyboardButton("˹ ᴅᴇᴠ ˼", url="https://t.me/ll_THUNDER_ll")
         ],
         [
-            InlineKeyboardButton("⌯ ʙᴧᴄᴋ ᴛσ ʜσϻє ⌯", callback_data="settingsback_helper"),
+            InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="MAIN_CP"),
             
         ]
         ]
@@ -77,7 +77,7 @@ class BUTTONS(object):
             InlineKeyboardButton("˹ υᴘᴅᴧᴛєs ˼", url="https://t.me/THUNDERDEVS"),
         ],
         [
-            InlineKeyboardButton("⌯ ʙᴧᴄᴋ ᴛσ ʜσϻє ⌯", callback_data="settingsback_helper"),
+            InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="MAIN_CP"),
             
         ]
         ]
