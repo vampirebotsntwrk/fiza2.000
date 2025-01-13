@@ -434,7 +434,7 @@ class Helper(object):
 ● ᴧᴅᴅ ϻє ηᴏᴡ ʙᴧʙʏ ɪɴ ʏᴏᴜʀ ɢʀσᴜᴘs.
 ─────────────────────────
 ❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ ➥ [ᴘᴜʀᴠɪ-ʙᴏᴛs](https://t.me/PURVI_SUPPORT)
-❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ ➥ [ᴘᴜʀᴠɪ-ᴜᴘᴅᴀᴛᴇs](https://t.me/PURVI_UPDAYES)
+❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ ➥ [ᴘᴜʀᴠɪ-ᴜᴘᴅᴀᴛᴇs](https://t.me/PURVI_UPDATES)
 ❖ ʙᴏᴛ σᴡηєʀ ➥ [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐀 ꯭ʟ ꯭ᴘ ꯭ʜ꯭ ᴧ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/ll_ALPHA_BABY_lll)
 ❖ ʀєᴘσ ʟɪηᴋ ➥ [ᴄʟɪᴄᴋ-ʜєʀє](github.com/TEAMPURVI)
 ─────────────────────────
