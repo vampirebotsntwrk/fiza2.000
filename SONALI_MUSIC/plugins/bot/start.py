@@ -120,7 +120,7 @@ async def start_pm(client, message: Message, _):
         out = private_panel(_)
         baby = await message.reply_text(f"**ᴅɪɴη ᴅᴏηɢ.🥀**")
         await baby.edit_text(f"**__ᴅɪηɢ ᴅᴏηɢ..🥀__**")
-        await baby.edit_text(f"**ᴅɪηɢ ᴅᴏηɢ...🥀__**")
+        await baby.edit_text(f"**__ᴅɪηɢ ᴅᴏηɢ...🥀__**")
         await baby.edit_text(f"**__ᴅɪηɢ ᴅᴏηɢ....🥀__**")
         await baby.edit_text(f"**__ᴅɪηɢ ᴅᴏηɢ.....🥀__**")
         await baby.edit_text(f"**__sᴛᴧʀᴛɪηɢ.⚡__**")
