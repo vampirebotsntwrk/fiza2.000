@@ -22,8 +22,8 @@ from pyrogram.enums import ParseMode
 
 
 photo = [
-    "https://telegra.ph/file/253891e197cf5188c68b3.jpg",
-    "https://telegra.ph/file/c32bcb41f9c3212bcf5bb.jpg",
+    "https://files.catbox.moe/3u8g3w.jpg",
+    "https://files.catbox.moe/jbtm8l.jpg",
     
 ]  
 
@@ -37,7 +37,7 @@ async def join_watcher(_, message):
             count = await app.get_chat_members_count(chat.id)
 
             msg = (
-                f"#𝗝𝗢𝗜𝗡_𝗡𝗘𝗪_𝗚𝗥𝗢𝗨𝗣\n\n"
+                f"#𝗕𝗢𝗧__𝗔𝗗𝗗𝗘𝗗_𝗡𝗘𝗪_𝗚𝗥𝗢𝗨𝗣\n\n"
                 f"⦿───────────────────⦿\n\n"
                 f"◎ ᴄʜᴀᴛ ɴᴀᴍᴇ ▸ {message.chat.title}\n"
                 f"◎ ᴄʜᴀᴛ ɪᴅ ▸ {message.chat.id}\n"
@@ -48,7 +48,7 @@ async def join_watcher(_, message):
 				f"⦿───────────────────⦿"
             )
             await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton(f"𝗦𝗘𝗘 𝗚𝗥𝗢𝗨𝗣", url=f"{link}")]
+            [InlineKeyboardButton(f"𝖦ʀᴏᴜᴘ ʟɪɴᴋ", url=f"{link}")]
          ]))
 
 
@@ -60,5 +60,5 @@ async def on_left_chat_member(_, message: Message):
         title = message.chat.title
         username = f"@{message.chat.username}" if message.chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐂ʜᴀᴛ"
         chat_id = message.chat.id
-        left = f"✫ <b><u>#𝗟𝗘𝗦𝗧_𝗚𝗥𝗢𝗨𝗣</u></b> ✫\n\nᴄʜᴀᴛ ᴛɪᴛʟᴇ : {title}\n\nᴄʜᴀᴛ ɪᴅ : {chat_id}\n\nʀᴇᴍᴏᴠᴇᴅ ʙʏ : {remove_by}\n\nʙᴏᴛ : @{app.username}"
+        left = f"✫ <b><u>#𝗟𝗘𝗙𝗧_𝗚𝗥𝗢𝗨𝗣</u></b> ✫\n\nᴄʜᴀᴛ ᴛɪᴛʟᴇ : {title}\n\nᴄʜᴀᴛ ɪᴅ : {chat_id}\n\nʀᴇᴍᴏᴠᴇᴅ ʙʏ : {remove_by}\n\nʙᴏᴛ : @{app.username}"
         await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=left)
