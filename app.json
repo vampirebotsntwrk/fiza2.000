@@ -1,12 +1,12 @@
 {
-    "name": "𝚃𝙷𝚄𝙽𝙳𝙴𝚁xMUSIC",
+    "name": "sᴏɴᴀʟɪ ᴍᴜsɪᴄ ʙᴏᴛ",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://telegra.ph/file/241c78c8477e062a03046.jpg",
+    "logo": "https://files.catbox.moe/fdkxi4.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Sona",
+    "ALPHA",
     "MusicBot",
     "telegram-bot",
     "pyrogram"
@@ -33,12 +33,12 @@
         "required": true
       },
       "OWNER_ID": {
-        "description": "The user id of user whom you would like to add as OWNER.",
+        "description": "Go @PURVI_AI_BOT And type /id and get The user id of user whom you would like to add as OWNER.",
         "value": "",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram v2 String Session from @STRINGSEASO_NBOT on Telegram.",
+        "description": "A Pyrogram v2 String Session from @KING_STRING_SESSION_BOT on Telegram.",
         "value": "",
         "required": true
       },
