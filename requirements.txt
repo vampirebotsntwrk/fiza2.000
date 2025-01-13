@@ -1,11 +1,8 @@
 aiofiles
 bard
 SpeechRecognition
-pornhub-api==0.2.0
 aiohttp 
-asyncio 
-beautifulsoup4
-daxxhub
+asyncio
 deepai
 python-whois
 dnspython
@@ -23,7 +20,6 @@ pillow==9.5.0
 psutil
 wget
 pyfiglet
-qrcode
 pytz
 future==0.18.3
 search_engine_parser
@@ -51,7 +47,5 @@ gpytranslate
 openai==0.28.0
 pickledb
 python-telegram-bot==20.7
-img2pdf
-cloudscraper
 pycryptodome
 opencv-python
