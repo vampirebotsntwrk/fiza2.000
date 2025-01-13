@@ -3,7 +3,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from unidecode import unidecode
 
 from SONALI_MUSIC import app
-from SONALI_MYSIC.misc import SUDOERS
+from SONALI_MUSIC.misc import SUDOERS
 from SONALI_MUSIC.utils.database import (
     get_active_chats,
     get_active_video_chats,
