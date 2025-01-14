@@ -1,9 +1,9 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center">
-𝐈 𝐒 𝐓 𝐊 𝐇 𝐀 𝐑 
+𝗔 𝗟 𝗣 𝗛 𝗔 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center">
-𝐓 𝐇 𝐔 𝐍 𝐃 𝐄 𝐑 ꭙ 𝗠 𝗨 𝗦 𝗜 𝗖 
+𝗧𝗘𝗔𝗠 𝗣𝗨𝗥𝗩𝗜 𝗕𝗢𝗧𝗦
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
