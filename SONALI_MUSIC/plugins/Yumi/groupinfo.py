@@ -21,14 +21,14 @@ async def get_group_status(_, message: Message):
     premium_acc = banned = deleted_acc = bot = 0  # You should replace these variables with actual counts.
 
     response_text = (
-        f"➖➖➖➖➖➖➖\n"
-        f"➲ GROUP NAME : {group.title} ✅\n"
-        f"➲ GROUP ID : {group.id}\n"
-        f"➲ TOTAL MEMBERS : {total_members}\n"
-        f"➲ DESCRIPTION : {group_description or 'N/A'}\n"
-        f"➲ USERNAME : @{group_username}\n"
+        f"**➖➖➖➖➖➖➖**\n"
+        f"**➲ GROUP NAME :** {group.title} ✅\n"
+        f"**➲ GROUP ID :** {group.id}\n"
+        f"**➲ TOTAL MEMBERS :** {total_members}\n"
+        f"**➲ DESCRIPTION :** {group_description or 'N/A'}\n"
+        f"**➲ USERNAME :** {group_username}\n"
        
-        f"➖➖➖➖➖➖➖"
+        f"**➖➖➖➖➖➖➖**"
     )
     
     await message.reply(response_text)
@@ -38,40 +38,22 @@ async def get_group_status(_, message: Message):
 
 
 
-# Command handler to get group status
 @app.on_message(filters.command("status") & filters.group)
-def group_status(client, message):
+async def group_status(client, message):
     chat = message.chat  # Chat where the command was sent
-    status_text = f"Group ID: {chat.id}\n" \
-                  f"Title: {chat.title}\n" \
-                  f"Type: {chat.type}\n"
-                  
-    if chat.username:  # Not all groups have a username
-        status_text += f"Username: @{chat.username}"
+    status_text = (
+        f"❍ **Group Information**\n\n"
+        f"Group ID: `{chat.id}`\n"
+        f"Title: **{chat.title}**\n"
+        f"Type: `{chat.type}`\n"
+    )
+
+    # Check if the group has a username
+    if chat.username:
+        status_text += f"Username: @{chat.username}\n"
     else:
-        status_text += "Username: None"
+        status_text += "Username: None\n"
 
-    message.reply_text(status_text)
-
-
-#########
-
-""" ***                                                                       
-────────────────────────────────────────────────────────────────────────
-─████████████────██████████████──████████──████████──████████──████████─
-─██░░░░░░░░████──██░░░░░░░░░░██──██░░░░██──██░░░░██──██░░░░██──██░░░░██─
-─██░░████░░░░██──██░░██████░░██──████░░██──██░░████──████░░██──██░░████─
-─██░░██──██░░██──██░░██──██░░██────██░░░░██░░░░██──────██░░░░██░░░░██───
-─██░░██──██░░██──██░░██████░░██────████░░░░░░████──────████░░░░░░████───
-─██░░██──██░░██──██░░░░░░░░░░██──────██░░░░░░██──────────██░░░░░░██─────
-─██░░██──██░░██──██░░██████░░██────████░░░░░░████──────████░░░░░░████───
-─██░░██──██░░██──██░░██──██░░██────██░░░░██░░░░██──────██░░░░██░░░░██───
-─██░░████░░░░██──██░░██──██░░██──████░░██──██░░████──████░░██──██░░████─
-─██░░░░░░░░████──██░░██──██░░██──██░░░░██──██░░░░██──██░░░░██──██░░░░██─
-─████████████────██████──██████──████████──████████──████████──████████─
-────────────────────────────────────────────────────────────────────────**"""
-
-
-
-
-####
+    # Send the response
+    await message.reply_text(status_text)
+    
