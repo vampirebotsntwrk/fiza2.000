@@ -20,18 +20,17 @@ def get_waifu_data(tags):
         return None
 
 @app.on_message(filters.command("waifu"))
-def waifu_command(client, message):
+async def waifu_command(client, message):
     try:
-        tags = ['maid']  # You can customize the tags as needed
-        waifu_data = get_waifu_data(tags)
+        tags = ['maid']  # Default tags; customize as needed
+        waifu_data = await get_waifu_data(tags)
 
-        if waifu_data and 'images' in waifu_data:
+        if waifu_data and 'images' in waifu_data and len(waifu_data['images']) > 0:
             first_image = waifu_data['images'][0]
             image_url = first_image['url']
-            message.reply_photo(image_url)
+            await message.reply_photo(image_url)
         else:
-            message.reply_text("No waifu found with the specified tags.")
-
+            await message.reply_text("❍ ɴᴏ ᴡᴀɪғᴜ ғᴏᴜɴᴅ ғᴏʀ ᴛʜᴇ sᴘᴇᴄɪғɪᴇᴅ ᴛᴀɢs.")
     except Exception as e:
-        message.reply_text(f"An error occurred: {str(e)}")
+        await message.reply_text(f"❍ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ: {str(e)}")
         
