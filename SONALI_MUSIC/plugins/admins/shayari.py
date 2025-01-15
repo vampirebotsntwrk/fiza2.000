@@ -155,7 +155,7 @@ async def mentionall(client, message):
 
 #
 
-@app.on_message(filters.command(["cancelshayari", "shayarioff"]))
+@app.on_message(filters.command(["shstop", "shayarioff"]))
 async def cancel_spam(client, message):
     if not message.chat.id in spam_chats:
         return await message.reply("𝐂𝐮𝐫𝐫𝐞𝐧𝐭𝐥𝐲 𝐈'𝐦 𝐍𝐨𝐭 ..")
@@ -177,4 +177,4 @@ async def cancel_spam(client, message):
             spam_chats.remove(message.chat.id)
         except:
             pass
-        return await message.reply("♦ OFFFFFFFFF♦")
+        return await message.reply("**♦ sᴛᴏᴘᴘᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ♦**")
