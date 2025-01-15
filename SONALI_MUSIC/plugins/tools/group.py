@@ -40,12 +40,21 @@ async def brah3(app: app, message: Message):
 
 ####
 
+from sympy import sympify
+
 @app.on_message(filters.command("math", prefixes="/"))
-def calculate_math(client, message):   
-    expression = message.text.split("/math ", 1)[1]
-    try:        
-        result = eval(expression)
+async def calculate_math(client, message):
+    if len(message.text.split(" ", 1)) < 2:
+        await message.reply("❍ ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴍᴀᴛʜᴇᴍᴀᴛɪᴄᴀʟ ᴇxᴘʀᴇssɪᴏɴ ᴀғᴛᴇʀ /math.")
+        return
+
+    expression = message.text.split(" ", 1)[1]
+    try:
+        # Safely evaluate the mathematical expression
+        result = sympify(expression)
         response = f"ᴛʜᴇ ʀᴇsᴜʟᴛ ɪs : {result}"
-    except:
-        response = "ɪɴᴠᴀʟɪᴅ ᴇxᴘʀᴇssɪᴏɴ"
-    message.reply(response)
+    except Exception as e:
+        response = f"❍ ɪɴᴠᴀʟɪᴅ ᴇxᴘʀᴇssɪᴏɴ. ᴇʀʀᴏʀ: {str(e)}"
+    
+    await message.reply(response)
+    
