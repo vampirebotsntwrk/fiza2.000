@@ -20,7 +20,7 @@ async def _whisper(_, inline_query):
                 title="💒 Whisper",
                 description=f"@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]",
                 input_message_content=InputTextMessageContent(f"💒 Usage:\n\n@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]"),
-                thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
+                thumb_url="https://files.catbox.moe/ynsu0c.jpg",
                 reply_markup=switch_btn
             )
         ]
@@ -39,7 +39,7 @@ async def _whisper(_, inline_query):
                     title="💒 Whisper",
                     description="Invalid username or ID!",
                     input_message_content=InputTextMessageContent("Invalid username or ID!"),
-                    thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
+                    thumb_url="https://files.catbox.moe/ynsu0c.jpg",
                     reply_markup=switch_btn
                 )
             ]
@@ -52,14 +52,14 @@ async def _whisper(_, inline_query):
                     title="💒 Whisper",
                     description=f"Send a Whisper to {user.first_name}!",
                     input_message_content=InputTextMessageContent(f"💒 You are sending a whisper to {user.first_name}.\n\nType your message/sentence."),
-                    thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
+                    thumb_url="https://files.catbox.moe/ynsu0c.jpg",
                     reply_markup=whisper_btn
                 ),
                 InlineQueryResultArticle(
                     title="🔩 One-Time Whisper",
                     description=f"Send a one-time whisper to {user.first_name}!",
                     input_message_content=InputTextMessageContent(f"🔩 You are sending a one-time whisper to {user.first_name}.\n\nType your message/sentence."),
-                    thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
+                    thumb_url="https://files.catbox.moe/ynsu0c.jpg",
                     reply_markup=one_time_whisper_btn
                 )
             ]
@@ -82,7 +82,7 @@ async def whispes_cb(_, query):
     to_user = int(data[2])
     user_id = query.from_user.id
     
-    if user_id not in [from_user, to_user, 6691393517]:
+    if user_id not in [from_user, to_user, 8143754205]:
         try:
             await _.send_message(from_user, f"{query.from_user.mention} is trying to open your whisper.")
         except Unauthorized:
@@ -110,9 +110,9 @@ async def in_help():
     answers = [
         InlineQueryResultArticle(
             title="💒 Whisper",
-            description=f"@HIMANSHI_MUSIC_BOT [USERNAME | ID] [TEXT]",
-            input_message_content=InputTextMessageContent(f"**📍Usage:**\n\n@HIMANSHI_MUSIC_BOT (Target Username or ID) (Your Message).\n\n**Example:**\n@HIMANSHI_MUSIC_BOT @username I Wanna Phuck You"),
-            thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
+            description=f"@Sonali_Music_Bot [USERNAME / ID] [ YOUR TEXT]",
+            input_message_content=InputTextMessageContent(f"**📍Usage:**\n\n@Sonali_Music_Bot (Target Username or ID) (Your Message).\n\n**Example:**\n@Sonali_Music_bot @ll_UNLUCKY_PERAON_ll I love You 😘"),
+            thumb_url="https://files.catbox.moe/ynsu0c.jpg",
             reply_markup=switch_btn
         )
     ]
