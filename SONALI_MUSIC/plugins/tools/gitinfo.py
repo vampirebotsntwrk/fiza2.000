@@ -1,23 +1,15 @@
 import asyncio, os, time, aiohttp
 import aiohttp
 from pyrogram import filters
-from daxxhub import daxxhub as papadaxx
 from SONALI_MUSIC import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-
-@app.on_message(filters.command("daxxhub"))
-async def daxxhub(_, message):
-    text = message.text[len("/daxxhub") :]
-    papadaxx(f"{text}").save(f"daxxhub_{message.from_user.id}.png")
-    await message.reply_photo(f"daxxhub_{message.from_user.id}.png")
-    os.remove(f"daxxhub_{message.from_user.id}.png")
 
 
 @app.on_message(filters.command(["github", "git"]))
 async def github(_, message):
     if len(message.command) != 2:
-        await message.reply_text("`/git LAND LE LE THUNDER  KA MADRCHOD` [ @THUNDERDEVS ]")
+        await message.reply_text("`/git TEAMPURVI`")
         return
 
     username = message.text.split(None, 1)[1]
@@ -45,16 +37,16 @@ async def github(_, message):
 
                 caption = f"""ɢɪᴛʜᴜʙ ɪɴғᴏ ᴏғ {name}
                 
-ᴜsᴇʀɴᴀᴍᴇ: {username}
-ʙɪᴏ: {bio}
-ʟɪɴᴋ: [Here]({url})
-ᴄᴏᴍᴩᴀɴʏ: {company}
-ᴄʀᴇᴀᴛᴇᴅ ᴏɴ: {created_at}
-ʀᴇᴩᴏsɪᴛᴏʀɪᴇs: {repositories}
-ʙʟᴏɢ: {blog}
-ʟᴏᴄᴀᴛɪᴏɴ: {location}
-ғᴏʟʟᴏᴡᴇʀs: {followers}
-ғᴏʟʟᴏᴡɪɴɢ: {following}"""
+✿ ᴜsᴇʀɴᴀᴍᴇ: {username}
+✿ ʙɪᴏ : {bio}
+✿ ʟɪɴᴋ : [ᴄʟɪᴄᴋ ʜᴇʀᴇ]({url})
+✿ ᴄᴏᴍᴩᴀɴʏ : {company}
+✿ ᴄʀᴇᴀᴛᴇᴅ ᴏɴ : {created_at}
+✿ ʀᴇᴩᴏsɪᴛᴏʀɪᴇs : {repositories}
+✿ ʙʟᴏɢ : {blog}
+✿ ʟᴏᴄᴀᴛɪᴏɴ : {location}
+✿ ғᴏʟʟᴏᴡᴇʀs : {followers}
+✿ ғᴏʟʟᴏᴡɪɴɢ : {following}"""
 
             except Exception as e:
                 print(str(e))
