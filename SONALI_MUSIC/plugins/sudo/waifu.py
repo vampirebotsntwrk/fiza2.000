@@ -8,7 +8,7 @@ waifu_api_url = 'https://api.waifu.im/search'
 async def get_waifu_data(tags):
     params = {
         'included_tags': tags,
-        'height': '>=1400'  # Optional height filter
+        'height': '>=1280'  # Optional height filter
     }
     async with httpx.AsyncClient() as client:
         response = await client.get(waifu_api_url, params=params)
