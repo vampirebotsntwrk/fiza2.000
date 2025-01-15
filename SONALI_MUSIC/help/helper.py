@@ -46,8 +46,14 @@ class Helper(object):
 '''
 
     HELP_03 = '''```
-❖ ᴛєxᴛ ᴛσ ᴠσɪᴄє ❖```
-**❖ ᴛєxᴛ ᴛσ ᴠσɪᴄє
+❖ ᴡʜɪsᴘᴇʀ ❖```
+
+**❖sᴇɴᴅ ᴡʜɪsᴘᴇʀ ᴍᴇssᴀɢᴇ..❖
+```
+❖ єxᴧϻᴘʟє : @Sonali_Music_bot @ll_UNLUCKY_PERAON_ll I love You 😘``|
+
+
+<u>**❖ ᴛєxᴛ ᴛσ ᴠσɪᴄє**</u>
 
 ❍ /tts : [ᴛєxᴛ]
 
