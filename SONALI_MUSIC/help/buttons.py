@@ -23,7 +23,7 @@ class BUTTONS(object):
         ],
         [
             InlineKeyboardButton("ғυη", callback_data="TOOL_BACK HELP_11"),
-            InlineKeyboardButton("ǫυσᴛʟʏ", callback_data="TOOL_BACK HELP_13"),
+            InlineKeyboardButton("ǫυσᴛʟʏ", callback_data="TOOL_BACK HELP_12"),
             InlineKeyboardButton("Ⓣ-ɢʀᴧᴘʜ", callback_data="TOOL_BACK HELP_26"),
         ],
         [
