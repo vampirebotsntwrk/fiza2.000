@@ -7,6 +7,44 @@ from SONALI_MUSIC import app
 class BUTTONS(object):
     BBUTTON = [
         [
+            InlineKeyboardButton("ᴄʜᴧᴛɢᴘᴛ", callback_data="TOOL_BACK HELP_01"),
+            InlineKeyboardButton("ᴀᴄᴛɪᴏɴ", callback_data="MANAGEMENT_BACK HELP_14"),
+            InlineKeyboardButton("ᴄᴏᴜᴘʟᴇs", callback_data="TOOL_BACK HELP_08"),
+        ],
+        [
+            InlineKeyboardButton("sєᴧʀᴄʜ", callback_data="TOOL_BACK HELP_02"),
+            InlineKeyboardButton("ᴛʀᴀɴsʟᴀᴛᴇ", callback_data="MANAGEMENT_BACK HELP_24"),
+            InlineKeyboardButton("ɪηғσ", callback_data="TOOL_BACK HELP_04"),
+        ],
+        [
+            InlineKeyboardButton("ғσηᴛ", callback_data="TOOL_BACK HELP_05"),
+            InlineKeyboardButton("ᴄᴏᴜᴘʟᴇs", callback_data="TOOL_BACK HELP_08"),
+            InlineKeyboardButton("ᴛᴧɢᴧʟʟ", callback_data="TOOL_BACK HELP_07"),
+        ],
+        [
+            InlineKeyboardButton("ғυη", callback_data="TOOL_BACK HELP_11"),
+            InlineKeyboardButton("ǫυσᴛʟʏ", callback_data="TOOL_BACK HELP_13"),
+            InlineKeyboardButton("ᴛ-ɢʀᴀᴘʜ", callback_data="MANAGEMENT_BACK HELP_26"),
+        ],
+        [
+            InlineKeyboardButton("ɢᴀᴍᴇ", callback_data="MANAGEMENT_BACK HELP_21"),
+            InlineKeyboardButton("sᴇᴛᴜᴘ", callback_data="MANAGEMENT_BACK HELP_17"),
+            InlineKeyboardButton("sᴀɴɢᴍᴀᴛᴀ", callback_data="MANAGEMENT_BACK HELP_23"),
+        ],
+        [
+            InlineKeyboardButton("ɢɪᴛʜᴜʙ", callback_data="MANAGEMENT_BACK HELP_25"),
+            InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data=f"MAIN_CP"),
+            InlineKeyboardButton("sᴛɪᴄᴋєʀs", callback_data="TOOL_BACK HELP_10"),
+        ]
+    ]
+
+    
+
+
+
+    
+    ALPHABUTTON = [
+        [
             InlineKeyboardButton("ᴧɪ | ᴄʜᴧᴛɢᴘᴛ", callback_data="TOOL_BACK HELP_01"),
         ],
         [
@@ -96,3 +134,6 @@ class BUTTONS(object):
             
         ]
         ]
+
+
+
