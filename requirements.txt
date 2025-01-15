@@ -50,3 +50,6 @@ pickledb
 python-telegram-bot==20.7
 pycryptodome
 opencv-python
+bing-image-urls
+bing_image_downloader
+git+https://github.com/TEAMPURVI/PurviAPI
