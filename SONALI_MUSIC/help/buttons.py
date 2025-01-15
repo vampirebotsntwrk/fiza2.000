@@ -7,13 +7,13 @@ from SONALI_MUSIC import app
 class BUTTONS(object):
     BBUTTON = [
         [
-            InlineKeyboardButton("ᴄʜᴧᴛɢᴘᴛ", callback_data="TOOL_BACK HELP_01"),
-            InlineKeyboardButton("ᴀᴄᴛɪᴏɴ", callback_data="TOOL_BACK HELP_14"),
-            InlineKeyboardButton("ᴄᴏᴜᴘʟᴇs", callback_data="TOOL_BACK HELP_08"),
+            InlineKeyboardButton("ᴄʜᴧᴛ-ɢᴘᴛ", callback_data="TOOL_BACK HELP_01"),
+            InlineKeyboardButton("ᴧᴄᴛɪση", callback_data="TOOL_BACK HELP_14"),
+            InlineKeyboardButton("ᴄσᴜᴘʟєs", callback_data="TOOL_BACK HELP_08"),
         ],
         [
             InlineKeyboardButton("sєᴧʀᴄʜ", callback_data="TOOL_BACK HELP_02"),
-            InlineKeyboardButton("ᴛʀᴀɴsʟᴀᴛᴇ", callback_data="TOOL_BACK HELP_24"),
+            InlineKeyboardButton("ᴛʀᴧηsʟᴧᴛє", callback_data="TOOL_BACK HELP_24"),
             InlineKeyboardButton("ɪηғσ", callback_data="TOOL_BACK HELP_04"),
         ],
         [
@@ -24,12 +24,12 @@ class BUTTONS(object):
         [
             InlineKeyboardButton("ғυη", callback_data="TOOL_BACK HELP_11"),
             InlineKeyboardButton("ǫυσᴛʟʏ", callback_data="TOOL_BACK HELP_13"),
-            InlineKeyboardButton("ᴛ-ɢʀᴀᴘʜ", callback_data="TOOL_BACK HELP_26"),
+            InlineKeyboardButton("Ⓣ-ɢʀᴧᴘʜ", callback_data="TOOL_BACK HELP_26"),
         ],
         [
-            InlineKeyboardButton("ɢᴀᴍᴇ", callback_data="TOOL_BACK HELP_21"),
-            InlineKeyboardButton("sᴇᴛᴜᴘ", callback_data="TOOL_BACK HELP_17"),
-            InlineKeyboardButton("sᴀɴɢᴍᴀᴛᴀ", callback_data="TOOL_BACK HELP_23"),
+            InlineKeyboardButton("ɢᴧϻє", callback_data="TOOL_BACK HELP_21"),
+            InlineKeyboardButton("sєᴛᴜᴘ", callback_data="TOOL_BACK HELP_17"),
+            InlineKeyboardButton("sᴧηɢϻᴧᴛᴧ", callback_data="TOOL_BACK HELP_23"),
         ],
         [
             InlineKeyboardButton("ɢɪᴛʜᴜʙ", callback_data="TOOL_BACK HELP_25"),
@@ -115,14 +115,14 @@ class BUTTONS(object):
             InlineKeyboardButton("˹ υᴘᴅᴧᴛєs ˼", url="https://t.me/+gMy8Cp190ediNzZl"),
         ],
         [
-            InlineKeyboardButton("⌯ ʙᴧᴄᴋ ᴛσ ʜσϻє ⌯", callback_data="settingsback_helper"),
+            InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="settingsback_helper"),
             
         ]
         ]
     
     SBUTTON = [
         [
-            InlineKeyboardButton("ʙσт нєʟᴘ", callback_data="settings_back_helper"),
+            InlineKeyboardButton("ϻᴜѕɪᴄ", callback_data="settings_back_helper"),
             InlineKeyboardButton("ϻᴧηᴧɢєϻєηᴛ", callback_data="TOOL_CP"),
         ],
         [
