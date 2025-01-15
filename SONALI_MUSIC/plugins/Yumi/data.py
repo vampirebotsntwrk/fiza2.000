@@ -1,6 +1,6 @@
 """MIT License
 
-Copyright (c) [Year] SANATANI TEAM
+Copyright (c) [Year] TEAM PURVI BOTS
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -47,21 +47,21 @@ def generate_info(client, message):
 
     # Create a message with the fake data
     info_message = (
-        f"**Full Name:** {name}\n"
+        f"**ғᴜʟʟ ηᴧϻє :** {name}\n"
         
-        f"**Address:** {address}\n"
+        f"**ᴧᴅᴅʀєss :** {address}\n"
         
-        f"**Country:** {country}\n"
+        f"**𝖢σᴜηᴛʀʏ :** {country}\n"
         
-        f"**Phone Number:** {phone_number}\n"
+        f"** 𝖯ʜσηє ɴᴜϻʙєʀ :** {phone_number}\n"
         
-        f"**Email:** {email}\n"
+        f"**𝖤ϻᴧɪʟ :** {email}\n"
         
-        f"**City:** {city}\n"
+        f"**𝖢ɪᴛʏ :** {city}\n"
         
-        f"**State:** {state}\n"
+        f"**sᴛᴧᴛє :** {state}\n"
         
-        f"**zipcode:** {zipcode}"
+        f"**𝖹ɪᴘᴄσᴅє :** {zipcode}"
         
     )
 
