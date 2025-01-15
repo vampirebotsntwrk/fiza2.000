@@ -42,9 +42,9 @@ async def get_group_status(_, message: Message):
 async def group_status(client, message):
     chat = message.chat  # Chat where the command was sent
     status_text = (
-        f"**❍ ɢʀᴏᴜᴘ ɪɴғᴏʀᴍᴀᴛɪᴏɴ**\n\n"
+        f"**ɢʀᴏᴜᴘ ɪɴғᴏʀᴍᴀᴛɪᴏɴ**\n\n"
         f"**ɢʀᴏᴜᴘ ɪᴅ :-** `{chat.id}`\n"
-        f"**ᴛɪᴛʟᴇ :-** {chat.title}**\n"
+        f"**ᴛɪᴛʟᴇ :-** **{chat.title}**\n"
         f"**ᴛʏᴘᴇ :-** `{chat.type}`\n"
     )
 
