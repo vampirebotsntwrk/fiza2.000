@@ -1,4 +1,3 @@
-
 import imghdr
 import os
 from asyncio import gather
@@ -44,12 +43,12 @@ async def sticker_image(_, message: Message):
     r = message.reply_to_message
 
     if not r:
-        return await message.reply("Reply to a sticker.")
+        return await message.reply("✦ ʀᴇᴘʟʏ ᴛᴏ ᴍᴇssᴀɢᴇ")
 
     if not r.sticker:
-        return await message.reply("Reply to a sticker.")
+        return await message.reply("✦ ʀᴇᴘʟʏ ᴛᴏ sᴛɪᴄᴋᴇʀ.")
 
-    m = await message.reply("Sending..")
+    m = await message.reply("✦ sᴇɴᴅɪɴɢ..")
     f = await r.download(f"{r.sticker.file_unique_id}.png")
 
     await gather(
@@ -66,12 +65,12 @@ async def sticker_image(_, message: Message):
 @capture_err
 async def kang(client, message: Message):
     if not message.reply_to_message:
-        return await message.reply_text("Reply to a sticker/image to kang it.")
+        return await message.reply_text("✦ ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ/ɪᴍᴀɢᴇ ᴛᴏ ᴋᴀɴɢ ɪᴛ.")
     if not message.from_user:
         return await message.reply_text(
-            "You are anon admin, kang stickers in my pm."
+            "✦ ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴ ᴀᴅᴍɪɴ, ᴋᴀɴɢ sᴛɪᴄᴋᴇʀs ɪɴ ᴍʏ ᴅᴍ."
         )
-    msg = await message.reply_text("Kanging Sticker..")
+    msg = await message.reply_text("✦ ᴋᴀɴɢɪɴɢ sɪᴄᴋᴇʀ...")
 
     # Find the proper emoji
     args = message.text.split()
@@ -97,7 +96,7 @@ async def kang(client, message: Message):
             )
         elif doc:
             if doc.file_size > 10000000:
-                return await msg.edit("File size too large.")
+                return await msg.edit("✦ ғɪʟᴇ sɪᴢᴇ ᴛᴏᴏ ʟᴀʀɢᴇ.")
 
             temp_file_path = await app.download_media(doc)
             image_type = imghdr.what(temp_file_path)
@@ -110,9 +109,9 @@ async def kang(client, message: Message):
                     temp_file_path
                 )
             except OSError as e:
-                await msg.edit_text("Something wrong happened.")
+                await msg.edit_text("✦ sᴏᴍᴇᴛʜɪɴɢ ᴡʀᴏɴɢ ʜᴀᴘᴘᴇɴᴇᴅ.")
                 raise Exception(
-                    f"Something went wrong while resizing the sticker (at {temp_file_path}); {e}"
+                    f"✦ sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ ᴡʜɪʟᴇ ʀᴇsɪᴢɪɴɢ ᴛʜᴇ sᴛɪᴄᴋᴇʀ (at {temp_file_path}); {e}"
                 )
             sticker = await create_sticker(
                 await upload_document(client, temp_file_path, message.chat.id),
@@ -121,9 +120,9 @@ async def kang(client, message: Message):
             if os.path.isfile(temp_file_path):
                 os.remove(temp_file_path)
         else:
-            return await msg.edit("Nope, can't kang that.")
+            return await msg.edit("✦ ɴᴏᴘᴇ, ᴄᴀɴ'ᴛ  ᴋᴀɴɢ ᴛʜᴀᴛ.")
     except ShortnameOccupyFailed:
-        await message.reply_text("Change Your Name Or Username")
+        await message.reply_text("✦ ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ɴᴀᴍᴇ ᴏʀ ᴜsᴇʀɴᴀᴍᴇ.")
         return
 
     except Exception as e:
@@ -145,7 +144,7 @@ async def kang(client, message: Message):
                 stickerset = await create_sticker_set(
                     client,
                     message.from_user.id,
-                    f"{message.from_user.first_name[:32]}'s kang pack",
+                    f"{message.from_user.first_name[:32]}'s ᴘᴀᴄᴋ ʙʏ @Sonali_Music_bot",
                     packname,
                     [sticker],
                 )
@@ -170,21 +169,21 @@ async def kang(client, message: Message):
             break
 
         await msg.edit(
-            "Sticker Kanged To [Pack](t.me/addstickers/{})\nEmoji: {}".format(
+            "✦ sᴛɪᴄᴋᴇʀ ᴋᴀɴɢᴇᴅ ᴛᴏ [ᴘᴀᴄᴋ](t.me/addstickers/{})\n✦ ᴇᴍᴏᴊɪ: {}".format(
                 packname, sticker_emoji
             )
         )
     except (PeerIdInvalid, UserIsBlocked):
         keyboard = InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="Start", url=f"t.me/{BOT_USERNAME}")]]
+            [[InlineKeyboardButton(text="⌯ sᴛᴀʀᴛ ɪɴ ᴘᴍ ⌯", url=f"t.me/{BOT_USERNAME}")]]
         )
         await msg.edit(
-            "You Need To Start A Private Chat With Me.",
+            "✦ ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ sᴛᴀʀᴛ ᴀ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ ᴡɪᴛʜ ᴍᴇ.",
             reply_markup=keyboard,
         )
     except StickerPngNopng:
         await message.reply_text(
-            "Stickers must be png files but the provided image was not a png"
+            "✦ sᴛɪᴄᴋᴇʀs ᴍᴜsᴛ ʙᴇ ᴘɴɢ ғɪʟᴇs ᴛʜᴇ ᴘʀᴏᴠɪᴅᴇᴅ ɪᴍᴀɢᴇ ᴡᴀs ɴᴏᴛ ᴀ ᴘɴɢ."
         )
     except StickerPngDimensions:
-        await message.reply_text("The sticker png dimensions are invalid.")
+        await message.reply_text("✦ ᴛʜᴇ sᴛɪᴄᴋᴇʀ ᴘɴɢ ᴅɪᴍᴇɴsɪᴏɴs ᴀʀᴇ ɪɴᴠᴀʟɪᴅ.")
