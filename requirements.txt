@@ -47,8 +47,7 @@ httpx==0.28.0
 gpytranslate
 openai==0.28.0
 pickledb
-python-telegram-bot==20.7
-httpx==0.25.2
+python-telegram-bot
 pycryptodome
 opencv-python
 bing-image-urls
