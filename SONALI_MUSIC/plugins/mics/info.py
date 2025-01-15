@@ -11,7 +11,7 @@ from typing import Union, Optional
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/SUCHI_MUSIC_BOT?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/Sonali_Music_Bot?startgroup=true"),
     ],
 ]
 
@@ -73,7 +73,7 @@ INFO_TEXT = """
 ❍ ᴅᴄ ɪᴅ ▷ {}
 ❍ ʙɪᴏ ▷ {}
 
-❖ ᴍᴀᴅᴇ ʙʏ  ➛ [lεɠεɳ∂](https://t.me/LEGEND_MICKE)
+❖ ᴍᴀᴅᴇ ʙʏ  ➛ [ᴘᴜʀᴠɪ-ʙᴏᴛs](https://t.me/PURVI_SUPPORT)
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 
 """
