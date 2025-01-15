@@ -98,7 +98,7 @@ class Helper(object):
 **✿ ᴄʜσσsє ᴛᴧɢ ɪη ʏσυʀ ᴄʜᴧᴛ ✿
 
 ❍ /all ➠ ᴧηʏ ᴡʀɪᴛᴛєη ᴛєxᴛ ᴛᴧɢ
-❍ /tagoff /tagstop ⇴ sᴛσᴘ ᴛᴧɢ
+❍ /alloff ➠ sᴛσᴘ ᴛᴧɢ
 
 
 ❍ /shayari ➠ ʀᴧηᴅσϻ sʜᴧʏᴧʀɪ ᴛᴧɢ 
