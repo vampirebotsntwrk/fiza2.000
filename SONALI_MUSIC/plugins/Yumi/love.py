@@ -3,7 +3,7 @@ import random
 from SONALI_MUSIC import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-        
+
 def get_random_message(love_percentage):
     if love_percentage <= 30:
         return random.choice([
@@ -24,14 +24,16 @@ def get_random_message(love_percentage):
             "❍ ᴅᴇsᴛɪɴᴇᴅ ᴛᴏ ʙᴇ ᴛᴏɢᴇᴛʜᴇʀ. ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴs!"
         ])
 
+
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/Sonali_Music_Bot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url="https://t.me/Sonali_Music_Bot?startgroup=true"),
     ],
 ]
 
-@app.on_message(filters.command("love", prefixes="/"))
-def love_command(client, message):
+
+@app.on_message(filters.command("love"))
+async def love_command(client, message):
     command, *args = message.text.split(" ")
     if len(args) >= 2:
         name1 = args[0].strip()
@@ -40,8 +42,19 @@ def love_command(client, message):
         love_percentage = random.randint(10, 100)
         love_message = get_random_message(love_percentage)
 
-        response = f"❖ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟᴏᴠᴇ ᴘᴇʀᴄᴇɴᴛᴀɢᴇ ⏤͟͟͞͞★ \n\n❅ {name1} ♥️ + {name2} ♥️ = {love_percentage}%\n\n{love_message}"
-        #client.send_message(message.chat.id, response, reply_markup=InlineKeyboardMarkup(EVAA),)
+        response = (
+            f"❖ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟᴏᴠᴇ ᴘᴇʀᴄᴇɴᴛᴀɢᴇ ⏤͟͟͞͞★ \n\n"
+            f"❅ {name1} ♥️ + {name2} ♥️ = {love_percentage}%\n\n{love_message}"
+        )
+        await client.send_message(
+            message.chat.id,
+            response,
+            reply_markup=InlineKeyboardMarkup(EVAA),
+        )
     else:
-        response = "❍ ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛᴡᴏ ɴᴀᴍᴇs ᴀғᴛᴇʀ /love ᴄᴏᴍᴍᴀɴᴅ."
-    client.send_message(message.chat.id, response, reply_markup=InlineKeyboardMarkup(EVAA),)
+        await client.send_message(
+            message.chat.id,
+            "❍ ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛᴡᴏ ɴᴀᴍᴇs ᴀғᴛᴇʀ /love ᴄᴏᴍᴍᴀɴᴅ.",
+            reply_markup=InlineKeyboardMarkup(EVAA),
+        )
+            
