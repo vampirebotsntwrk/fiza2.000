@@ -2,7 +2,7 @@ import asyncio
 from pyrogram.enums import ChatType, ChatMemberStatus
 from SONALI_MUSIC import app
 from pyrogram import filters
-from SONALI_MUSIC.utils.SonaBAN import admin_filter
+from SONALI_MUSIC.utils.Sona_BAN import admin_filter
 
 
 
