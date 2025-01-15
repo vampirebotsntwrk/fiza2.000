@@ -8,12 +8,12 @@ class BUTTONS(object):
     BBUTTON = [
         [
             InlineKeyboardButton("ᴄʜᴧᴛɢᴘᴛ", callback_data="TOOL_BACK HELP_01"),
-            InlineKeyboardButton("ᴀᴄᴛɪᴏɴ", callback_data="MANAGEMENT_BACK HELP_14"),
+            InlineKeyboardButton("ᴀᴄᴛɪᴏɴ", callback_data="TOOL_BACK HELP_14"),
             InlineKeyboardButton("ᴄᴏᴜᴘʟᴇs", callback_data="TOOL_BACK HELP_08"),
         ],
         [
             InlineKeyboardButton("sєᴧʀᴄʜ", callback_data="TOOL_BACK HELP_02"),
-            InlineKeyboardButton("ᴛʀᴀɴsʟᴀᴛᴇ", callback_data="MANAGEMENT_BACK HELP_24"),
+            InlineKeyboardButton("ᴛʀᴀɴsʟᴀᴛᴇ", callback_data="TOOL_BACK HELP_24"),
             InlineKeyboardButton("ɪηғσ", callback_data="TOOL_BACK HELP_04"),
         ],
         [
@@ -24,15 +24,15 @@ class BUTTONS(object):
         [
             InlineKeyboardButton("ғυη", callback_data="TOOL_BACK HELP_11"),
             InlineKeyboardButton("ǫυσᴛʟʏ", callback_data="TOOL_BACK HELP_13"),
-            InlineKeyboardButton("ᴛ-ɢʀᴀᴘʜ", callback_data="MANAGEMENT_BACK HELP_26"),
+            InlineKeyboardButton("ᴛ-ɢʀᴀᴘʜ", callback_data="TOOL_BACK HELP_26"),
         ],
         [
-            InlineKeyboardButton("ɢᴀᴍᴇ", callback_data="MANAGEMENT_BACK HELP_21"),
-            InlineKeyboardButton("sᴇᴛᴜᴘ", callback_data="MANAGEMENT_BACK HELP_17"),
-            InlineKeyboardButton("sᴀɴɢᴍᴀᴛᴀ", callback_data="MANAGEMENT_BACK HELP_23"),
+            InlineKeyboardButton("ɢᴀᴍᴇ", callback_data="TOOL_BACK HELP_21"),
+            InlineKeyboardButton("sᴇᴛᴜᴘ", callback_data="TOOL_BACK HELP_17"),
+            InlineKeyboardButton("sᴀɴɢᴍᴀᴛᴀ", callback_data="TOOL_BACK HELP_23"),
         ],
         [
-            InlineKeyboardButton("ɢɪᴛʜᴜʙ", callback_data="MANAGEMENT_BACK HELP_25"),
+            InlineKeyboardButton("ɢɪᴛʜᴜʙ", callback_data="TOOL_BACK HELP_25"),
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data=f"MAIN_CP"),
             InlineKeyboardButton("sᴛɪᴄᴋєʀs", callback_data="TOOL_BACK HELP_10"),
         ]
