@@ -15,7 +15,7 @@ async def get_truth(client, message):
         response = requests.get(truth_api_url)
         if response.status_code == 200:
             truth_question = response.json()["question"]
-            await message.reply_text(f"Truth question:\n\n{truth_question}")
+            await message.reply_text(f"<u>**тʀᴜᴛʜ ǫᴜєsᴛɪση :-**</u> \n\n{truth_question}")
         else:
             await message.reply_text("Failed to fetch a truth question. Please try again later.")
     except Exception as e:
@@ -23,14 +23,19 @@ async def get_truth(client, message):
         
 
 @app.on_message(filters.command("dare"))
-def get_dare(client, message):
+async def get_dare(client, message):
     try:
         # Make a GET request to the Dare API
         response = requests.get(dare_api_url)
         if response.status_code == 200:
-            dare_question = response.json()["question"]
-            message.reply_text(f"Dare question:\n\n{dare_question}")
+            try:
+                dare_data = response.json()
+                dare_question = dare_data.get("question", "No dare question available.")
+                await message.reply_text(f"<u>**ᴅᴀʀє ǫᴜєsᴛɪση :-**</u>\n\n{dare_question}")
+            except ValueError:
+                await message.reply_text("Failed to parse the dare question. Please try again later.")
         else:
-            message.reply_text("Failed to fetch a dare question. Please try again later.")
+            await message.reply_text("Failed to fetch a dare question. Please try again later.")
     except Exception as e:
-        message.reply_text("An error occurred while fetching a dare question. Please try again later.")
+        await message.reply_text(f"An error occurred: {str(e)}")
+        
