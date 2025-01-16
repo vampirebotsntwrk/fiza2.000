@@ -54,20 +54,43 @@ def stream_markup_timer(_, chat_id, played, dur):
     else:
         bar = "—————————◉"
     buttons = [
-                [
+        [
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="⎙", callback_data=f"add_playlist|{videoid}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],
+        [
             InlineKeyboardButton(
                 text=f"{played} {bar} {dur}",
                 callback_data="GetTimer",
             )
         ],
-		[
-         InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/{app.username}?startgroup=true",)
+        [
+            InlineKeyboardButton(
+                text="⪻  -10s",
+                callback_data=f"ADMIN SeekBackward|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="↻",
+                callback_data=f"ADMIN Replay|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="+10s  ⪼",
+                callback_data=f"ADMIN SeekForward|{chat_id}",
+            ),
         ],
         [
-         InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url="https://t.me/PURVI_SUPPORT"),
-         InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url="https://t.me/+1NPyVr47HYtiYWE9"),
+            InlineKeyboardButton(
+                text="⍟ ᴀᴅᴅ ᴍᴇ ⍟",
+                url=f"https://t.me/{bot_username}?startgroup=true",
+            ),
+            InlineKeyboardButton(
+                text="Close",
+                callback_data="close",
+            ),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
