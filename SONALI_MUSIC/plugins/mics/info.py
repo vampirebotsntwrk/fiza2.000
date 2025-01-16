@@ -55,7 +55,7 @@ async def get_userinfo_img(
 
 # --------------------------------------------------------------------------------- #
 
-bg_path = "SONALI_MUSIC/assets/SonaINFO.PNG"
+bg_path = "SONALI_MUSIC/assets/SonaINFO.png"
 font_path = "SONALI_MUSIC/assets/hiroko.ttf"
 
 #
