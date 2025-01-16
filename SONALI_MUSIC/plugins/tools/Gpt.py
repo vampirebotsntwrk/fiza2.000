@@ -1,3 +1,4 @@
+import requests
 from pyrogram import Client, filters
 from pyrogram.enums import ChatAction
 from SONALI_MUSIC import app  # Assuming this is the app instance from your project
