@@ -98,10 +98,29 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
-         InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url="https://t.me/PURVI_SUPPORT"),
-         InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url="https://t.me/+1NPyVr47HYtiYWE9"),
+            InlineKeyboardButton(
+                text="⪻  -10s",
+                callback_data=f"ADMIN SeekBackward|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="↻",
+                callback_data=f"ADMIN Replay|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="+10s  ⪼",
+                callback_data=f"ADMIN SeekForward|{chat_id}",
+            ),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [
+            InlineKeyboardButton(
+                text="⍟ ᴀᴅᴅ ᴍᴇ ⍟",
+                url=f"https://t.me/{bot_username}?startgroup=true",
+            ),
+            InlineKeyboardButton(
+                text="Close",
+                callback_data="close",
+            ),
+        ],
     ]
     return buttons
 
