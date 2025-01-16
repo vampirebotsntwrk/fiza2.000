@@ -4,7 +4,6 @@ from pyrogram.types import InlineKeyboardButton
 from SONALI_MUSIC import app
 import config
 from SONALI_MUSIC.utils.formatters import time_to_seconds
-import requests
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
@@ -55,43 +54,20 @@ def stream_markup_timer(_, chat_id, played, dur):
     else:
         bar = "—————————◉"
     buttons = [
-        [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="⎙", callback_data=f"add_playlist|{videoid}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
-        ],
-        [
+                [
             InlineKeyboardButton(
                 text=f"{played} {bar} {dur}",
                 callback_data="GetTimer",
             )
         ],
-        [
-            InlineKeyboardButton(
-                text="⪻  -10s",
-                callback_data=f"ADMIN SeekBackward|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text="↻",
-                callback_data=f"ADMIN Replay|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="+10s  ⪼",
-                callback_data=f"ADMIN SeekForward|{chat_id}",
-            ),
+		[
+         InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/{app.username}?startgroup=true",)
         ],
         [
-            InlineKeyboardButton(
-                text="⍟ ᴀᴅᴅ ᴍᴇ ⍟",
-                url=f"https://t.me/{bot_username}?startgroup=true",
-            ),
-            InlineKeyboardButton(
-                text="Close",
-                callback_data="close",
-            ),
+         InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url="https://t.me/PURVI_SUPPORT"),
+         InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url="https://t.me/+1NPyVr47HYtiYWE9"),
         ],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
@@ -99,29 +75,10 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(
-                text="⪻  -10s",
-                callback_data=f"ADMIN SeekBackward|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text="↻",
-                callback_data=f"ADMIN Replay|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="+10s  ⪼",
-                callback_data=f"ADMIN SeekForward|{chat_id}",
-            ),
+         InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url="https://t.me/PURVI_SUPPORT"),
+         InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url="https://t.me/+1NPyVr47HYtiYWE9"),
         ],
-        [
-            InlineKeyboardButton(
-                text="⍟ ᴀᴅᴅ ᴍᴇ ⍟",
-                url=f"https://t.me/{bot_username}?startgroup=true",
-            ),
-            InlineKeyboardButton(
-                text="Close",
-                callback_data="close",
-            ),
-        ],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
@@ -146,6 +103,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         ],
     ]
     return buttons
+                
 
 
 def livestream_markup(_, videoid, user_id, mode, channel, fplay):
