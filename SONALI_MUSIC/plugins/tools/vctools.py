@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 async def brah(_, msg):
     text = "**🫣 ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ 😆**"
     add_link = f"https://t.me/{app.username}?startgroup=true"
-    reply_text = f"{text} 🤭🤭"
+    reply_text = f"{text}"
 
     # Inline Keyboard with a button to add the bot
     reply_markup = InlineKeyboardMarkup([
@@ -25,7 +25,7 @@ async def brah(_, msg):
 async def brah2(_, msg: Message):
     text = "**😤 ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ᴇɴᴅᴇᴅ 🙁**"
     add_link = f"https://t.me/{app.username}?startgroup=true"
-    reply_text = f"{text} 🤭🤭"
+    reply_text = f"{text}"
 
     # Inline Keyboard with a button to add the bot
     reply_markup = InlineKeyboardMarkup([
