@@ -7,12 +7,34 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 # vc on
 @app.on_message(filters.video_chat_started)
 async def brah(_, msg):
-    await msg.reply("**⌾ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ ⌾**")
+    text = "**🫣 ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ 😆**"
+    add_link = f"https://t.me/{app.username}?startgroup=true"
+    reply_text = f"{text} 🤭🤭"
+
+    # Inline Keyboard with a button to add the bot
+    reply_markup = InlineKeyboardMarkup([
+        [InlineKeyboardButton(text="✙ ᴧᴅᴅ ᴍᴇ ✙", url=add_link)]
+    ])
+
+    # Send the message with the keyboard
+    await msg.reply(reply_text, reply_markup=reply_markup)
+
 
 # vc off
 @app.on_message(filters.video_chat_ended)
-async def brah2(_, msg):
-    await msg.reply("**⌾ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ᴇɴᴅᴇᴅ ⌾**")
+async def brah2(_, msg: Message):
+    text = "**😤 ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ᴇɴᴅᴇᴅ 🙁**"
+    add_link = f"https://t.me/{app.username}?startgroup=true"
+    reply_text = f"{text} 🤭🤭"
+
+    # Inline Keyboard with a button to add the bot
+    reply_markup = InlineKeyboardMarkup([
+        [InlineKeyboardButton(text="✙ ᴧᴅᴅ ᴍᴇ ✙", url=add_link)]
+    ])
+
+    # Send the message with the keyboard
+    await msg.reply(reply_text, reply_markup=reply_markup)
+    
 
 # invite members on vc
 @app.on_message(filters.video_chat_members_invited)
