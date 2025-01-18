@@ -52,7 +52,7 @@ channel = ["channel"]
 
 # ========================================= #
 
-@app.on_message(filters.command(["rose", "roseie"], prefixes=["r", "R"]) & admin_filter)
+@app.on_message(filters.command(["lpha", "onali"], prefixes=["A", "S"]) & admin_filter)
 async def restriction_app(_, message):
     reply = message.reply_to_message
     chat_id = message.chat.id
@@ -64,12 +64,7 @@ async def restriction_app(_, message):
     # Extract the text after the command
     command_args = message.text.split(maxsplit=1)[1]
     data = command_args.split(" ")
-
-    # Add your logic to process 'data' here
-    # Example: return the first argument as a reply
-    await message.reply(f"Arguments received: {data}")
  
-    
     if reply:
         user_id = reply.from_user.id
         for banned in data:
