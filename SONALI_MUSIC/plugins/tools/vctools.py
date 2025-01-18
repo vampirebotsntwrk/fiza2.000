@@ -13,7 +13,7 @@ async def brah(_, msg):
 
     # Inline Keyboard with a button to add the bot
     reply_markup = InlineKeyboardMarkup([
-        [InlineKeyboardButton(text="✙ ᴧᴅᴅ ᴍᴇ ✙", url=add_link)]
+        [InlineKeyboardButton(text="๏ ᴊσɪη ᴠᴄ ๏", url=add_link)]
     ])
 
     # Send the message with the keyboard
@@ -29,7 +29,7 @@ async def brah2(_, msg: Message):
 
     # Inline Keyboard with a button to add the bot
     reply_markup = InlineKeyboardMarkup([
-        [InlineKeyboardButton(text="✙ ᴧᴅᴅ ᴍᴇ ✙", url=add_link)]
+        [InlineKeyboardButton(text="๏ ᴧᴅᴅ ϻє вᴧвყ ๏", url=add_link)]
     ])
 
     # Send the message with the keyboard
@@ -54,7 +54,7 @@ async def brah3(app: app, message: Message):
         reply_text = f"{text} 🤭🤭"
 
         await message.reply(reply_text, reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton(text= "✙ ᴧᴅᴅ ᴍᴇ ✙", url=add_link)],
+            [InlineKeyboardButton(text= "๏ ᴊσɪη ᴠᴄ ๏", url=add_link)],
         ]))
     except Exception as e:
         print(f"Error: {e}")
