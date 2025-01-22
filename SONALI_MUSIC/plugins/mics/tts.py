@@ -8,7 +8,7 @@ def text_to_speech(client, message):
     try:
         # Ensure the message contains text for TTS
         if len(message.text.split()) < 2:
-            message.reply_text("Please provide text for TTS. Usage: `/tts <text>`")
+            message.reply_text("**ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴛᴇxᴛ ғᴏʀ ᴛᴛs.** \n\n**ᴜsᴀɢᴇ :** `/tts i love you`")
             return
 
         # Extract text after the command
@@ -24,4 +24,4 @@ def text_to_speech(client, message):
 
     except Exception as e:
         # Handle errors gracefully
-        message.reply_text(f"ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ : {str(e)}")
+        message.reply_text(f"**ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ :** {str(e)}")
