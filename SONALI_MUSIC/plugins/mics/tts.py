@@ -4,11 +4,11 @@ from SONALI_MUSIC import app
 
 
 @app.on_message(filters.command('tts'))
-def text_to_speech(client, message):
+async def text_to_speech(client, message):
     try:
         # Check if the command has accompanying text
         if len(message.text.split()) < 2:
-            message.reply_text(
+            await message.reply_text(
                 "**ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴛᴇxᴛ ғᴏʀ ᴛᴛs.** \n\n**ᴜsᴀɢᴇ :** `/tts i love you`"
             )
             return
@@ -22,8 +22,9 @@ def text_to_speech(client, message):
         tts.save(file_name)
 
         # Send the generated audio file
-        app.send_audio(chat_id=message.chat.id, audio=file_name)
+        await app.send_audio(chat_id=message.chat.id, audio=file_name)
 
     except Exception as e:
         # Handle errors gracefully
-        message.reply_text(f"**ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ :** {str(e)}")
+        await message.repl
+        
