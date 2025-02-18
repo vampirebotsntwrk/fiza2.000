@@ -1,6 +1,6 @@
 from SONALI_MUSIC import app
 import asyncio
-from pyrogram import Client
+from pyrogram import Client, filters
 from pyrogram.types import ChatPrivileges
 
 # पहले से जॉइन किए गए यूज़र्स को स्टोर करने के लिए एक सेट
@@ -36,7 +36,13 @@ async def check_video_chat(chat_id):
         await asyncio.sleep(10)  # हर 10 सेकंड में चेक करें
 
 # जब बॉट किसी ग्रुप में ऐड हो तो ऑटो स्टार्ट हो
-@app.on_message(filters.command("start") & filters.group)
+@app.on_message(filters.command("start") &  "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-02-18T12:45:13.916542+00:00 app[worker.1]:   File "/app/SONALI_MUSIC/plugins/tools/vcjoin.py", line 39, in <module>
+2025-02-18T12:45:13.916587+00:00 app[worker.1]:     @app.on_message(filters.command("start") & filters.group)
+2025-02-18T12:45:13.916614+00:00 app[worker.1]: NameError: name 'filters' is not defined. Did you mean: 'filter'?
+2025-02-18T12:45:14.621920+00:00 heroku[worker.1]: Process exited with status 1
+2025-02-18T12:45:14.649056+00:00 heroku[worker.1]: State changed from up to crashed
+.group)
 async def start_video_check(client, message):
     chat_id = message.chat.id
     if chat_id not in video_chat_users:
