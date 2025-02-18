@@ -1,5 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import ChatPrivileges
+from SONALI_MUSIC import app
 
 
 @app.on_chat_member_updated()
