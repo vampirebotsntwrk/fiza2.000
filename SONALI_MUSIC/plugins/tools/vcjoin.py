@@ -1,7 +1,6 @@
-import asyncio
-from SONALI_MUSIC import app
 from pyrogram import Client, filters
 from pyrogram.types import ChatPrivileges
+
 
 @app.on_chat_member_updated()
 async def video_chat_event(client, update):
@@ -15,6 +14,4 @@ async def video_chat_event(client, update):
 
             message = f"**⚘ ᴊσɪηєᴅ ᴠɪᴅєᴏ ᴄʜᴧᴛ**\n\n**:⧽ ηᴧϻє :** {mention}\n**:⧽ ᴜsєʀ ɪᴅ :** `{user_id}`\n**:⧽ ᴜsєʀηᴧϻє :** {username}"
             
-            msg = await client.send_message(chat_id, message)  # मैसेज भेजें
-            await asyncio.sleep(60)  # 60 सेकंड (1 मिनट) तक वेट करें
-            await client.delete_messages(chat_id, msg.message_id)  # मैसेज डिलीट करें
+            await client.send_message(chat_id, message)
