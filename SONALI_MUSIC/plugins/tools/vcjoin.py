@@ -20,5 +20,3 @@ async def video_chat_event(client, update):
         msg = await client.send_message(chat_id, message)  # मैसेज भेजें
         await asyncio.sleep(60)  # 1 मिनट बाद मैसेज डिलीट करें
         await client.delete_messages(chat_id, msg.message_id)  # मैसेज डिलीट करें
-
-app.run()
