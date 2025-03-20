@@ -12,7 +12,7 @@ async def fetch_med_info(client, message):
 
     await client.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
 
-    api_url = f"https://chatwithai.codesearch.workers.dev/?chat={query}"
+    api_url = f"https://chatwithai.codesearchdev.workers.dev/?chat={YourQuery}"
     try:
         response = requests.get(api_url)
         if response.status_code == 200:
@@ -35,7 +35,7 @@ async def fetch_med_info_group(client, message):
 
     await client.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
 
-    api_url = f"https://chatwithai.codesearch.workers.dev/?chat={query}"
+    api_url = f"https://chatwithai.codesearchdev.workers.dev/?chat={YourQuery}"
     try:
         response = requests.get(api_url)
         if response.status_code == 200:
