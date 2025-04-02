@@ -1,6 +1,7 @@
 import requests
 from pyrogram import Client, filters
 from pyrogram.enums import ChatAction
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from SONALI_MUSIC import app  # बॉट का एप्लिकेशन इंपोर्ट करें
 
 @app.on_message(filters.command("ask"))
@@ -23,9 +24,12 @@ async def fetch_med_info(client, message):
             reply = "**ғᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ ᴅᴀᴛᴀ ғʀᴏᴍ ᴛʜᴇ ᴀᴘɪ.**"
     except Exception as e:
         reply = f"**ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ :** {e}"
-
-    reply += "\n\n**❍ ᴀɴsᴡᴇʀ ʙʏ :- @Sonali_Music_Bot**"
-    await message.reply_text(reply)
+    
+    button = InlineKeyboardMarkup(
+        [[InlineKeyboardButton("ᴧηsᴡєʀ ʙʏ", url=f"https://t.me/Sonali_Music_bot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users")]]
+    )
+    
+    await message.reply_text(reply, reply_markup=button)
 
 @app.on_message(filters.mentioned & filters.group)
 async def fetch_med_info_group(client, message):
@@ -47,6 +51,9 @@ async def fetch_med_info_group(client, message):
             reply = "**ғᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ ᴅᴀᴛᴀ ғʀᴏᴍ ᴛʜᴇ ᴀᴘɪ.**"
     except Exception as e:
         reply = f"**ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ :** {e}"
-
-    reply += "\n\n**❍ ᴀɴsᴡᴇʀ ʙʏ :- @Sonali_Music_Bot**"
-    await message.reply_text(reply)
+    
+    button = InlineKeyboardMarkup(
+        [[InlineKeyboardButton("ᴧηsᴡєʀ ʙʏ", url=f"https://t.me/Sonali_Music_bot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users")]]
+    )
+    
+    await message.reply_text(reply, reply_markup=button)
