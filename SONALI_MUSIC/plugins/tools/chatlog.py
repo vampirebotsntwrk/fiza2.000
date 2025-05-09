@@ -22,8 +22,8 @@ from pyrogram.enums import ParseMode
 
 
 photo = [
-    "https://files.catbox.moe/3u8g3w.jpg",
-    "https://files.catbox.moe/jbtm8l.jpg",
+    "https://files.catbox.moe/tdj8he.jpg",
+    "https://files.catbox.moe/ygpszq.jpg",
     
 ]  
 
@@ -48,7 +48,7 @@ async def join_watcher(_, message):
 				f"⦿───────────────────⦿"
             )
             await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton(f"𝖦ʀᴏᴜᴘ ʟɪɴᴋ", url=f"{link}")]
+            [InlineKeyboardButton(f"#𝗚𝗥𝗢𝗨𝗣 #𝗟𝗜𝗡𝗞", url=f"{link}")]
          ]))
 
 
