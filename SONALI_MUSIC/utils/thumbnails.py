@@ -91,7 +91,7 @@ async def get_thumb(videoid):
         line_length = 580
         red_length = int(line_length * 0.6)
         draw.line([(565, 380), (565 + red_length, 380)], fill="red", width=9)
-        draw.line([(565 + red_length, 380), (565 + line_length, 380)], fill="white", width=8)
+        draw.line([(565 + red_length, 380), (565 + line_length, 380)], fill="yellow", width=8)
         draw.ellipse([565 + red_length - 10, 380 - 10, 565 + red_length + 10, 380 + 10], fill="red")
         draw.text((565, 400), "00:00", (255, 255, 255), font=arial)
         draw.text((1080, 400), duration, (255, 255, 255), font=arial)
