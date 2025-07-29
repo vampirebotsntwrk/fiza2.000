@@ -1,4 +1,4 @@
-#Sona_SANATANI_[ TG :- @V_VIP_OWNER ]
+#Sona_SANATANI_[ TG :- @llVAMPIRE_KINGlll ]
 
 from pyrogram import filters, enums
 from pyrogram.types import (
