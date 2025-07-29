@@ -7,13 +7,13 @@ import httpx
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 start_txt = """**
-<u>❃ ᴡєʟᴄσϻє ᴛᴏ ᴛєᴧϻ ᴋʀɪᴛɪ ʀєᴘσs ❃</u>
+<u>❃ ᴡєʟᴄσϻє ᴛᴏ ᴛєᴧϻ ᴠᴀᴍᴘɪʀᴇ ʀєᴘσs ❃</u>
  
 ✼ ʀєᴘᴏ ᴛᴏ ηʜɪ ϻɪʟєɢᴧ ʏʜᴧ
  
-❉ ᴘᴧʜʟє ᴘᴧᴘᴧ ʙσʟ ʀєᴘᴏ ᴏᴡηєʀ ᴋᴏ 
+❉ ᴘᴧʜʟє ᴠᴀᴍᴘɪʀᴇ ᴋᴏ ᴘᴧᴘᴧ ʙσʟ 
 
-✼ || [ʙᴀᴅɴᴀᴍ-ʙᴧʙʏ](https://t.me/KRITI_UPDATE) ||
+✼ || [ᴠᴀᴍᴘɪʀᴇ-ᴋɪɴɢ](https://t.me/lllVAMPIRE_UPDATElll) ||
  
 ❊ ʀᴜη 24x7 ʟᴧɢ ϝʀєє ᴡɪᴛʜσᴜᴛ sᴛσᴘ**
 """
@@ -28,11 +28,11 @@ async def start(_, msg):
           InlineKeyboardButton("✙ ᴧᴅᴅ ϻє вᴧʙʏ ✙", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-          InlineKeyboardButton("• ʜєʟᴘ •", url="https://t.me/KRITI_SUPPORT_CHAT"),
-          InlineKeyboardButton("• 𝛅ᴜᴘᴘσʀᴛ •", url="https://t.me/KRITI_UPDATE"),
+          InlineKeyboardButton("• ʜєʟᴘ •", url="https://t.me/lllVAMPIRE_UPDATElll"),
+          InlineKeyboardButton("• 𝛅ᴜᴘᴘσʀᴛ •", url="https://t.me/lllVAMPIRE_UPDATElll"),
           ],
 [
-InlineKeyboardButton("• ϻᴧɪη ʙσᴛ •", url=f"https://t.me/kriti_xmusic_bot"),
+InlineKeyboardButton("• ϻᴧɪη ʙσᴛ •", url=f"https://t.me/lllVAMPIRE_UPDATElll"),
 
         ]]
     
